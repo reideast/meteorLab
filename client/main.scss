@@ -1,6 +1,9 @@
 /* CSS declarations go here */
 $profile-image-color: #008080;
+$profile-image-size: 100px;
 
 .img-profile {
     border: 3px solid $profile-image-color;
+    width: $profile-image-size;
+    height: $profile-image-size;
 }

@@ -1,22 +1,22 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
-import './main.html';
+import './button.html';
 
-Template.hello.onCreated(function helloOnCreated() {
+Template.button.onCreated(function helloOnCreated() {
   // counter starts at 0
-  this.counter = new ReactiveVar(0);
+  this.counterVar = new ReactiveVar(0);
 });
 
-Template.hello.helpers({
+Template.button.helpers({
   counter() {
-    return Template.instance().counter.get();
+    return Template.instance().counterVar.get();
   },
 });
 
-Template.hello.events({
+Template.button.events({
   'click button'(event, instance) {
     // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
+    instance.counterVar.set(instance.counterVar.get() + 1);
   },
 });
