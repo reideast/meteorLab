@@ -8,15 +8,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-				<a class="navbar-brand" href="main.html">CT216 Lab</a>
+				<a class="navbar-brand" href="/">CT216 Lab</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapsing-area">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="main.html">Home <span class="sr-only">(current)</span></a></li>
-					<li><a href="findUs.html">Find Us</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="{{isActiveRoute 'index'}}"><a href="index">Home</a></li>
+					<li class="{{isActiveRoute 'button'}}"><a href="button">Button</a></li>
+					<li class="{{isActiveRoute 'about'}}"><a href="about">About</a></li>
+					<li class="{{isActiveRoute 'findUs'}}"><a href="findUs">Find Us</a></li>
+					<li class="{{isActiveRoute 'contact'}}"><a href="contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
