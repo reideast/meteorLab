@@ -35,7 +35,7 @@
 				{{> hello}}
 			</div>
 			<div class="col-xs-6">
-				{{> info}}
+				{{> cats}}
 			</div>
 		</div>
 	</div>
@@ -46,6 +46,11 @@
 <template name="hello">
 	<button>Click Me</button>
 	<p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="cats">
+	<img src="img/cat_proximity.png" alt="youreakitty" class="img-responsive img-circle img-profile"> 
+	<img src="img/mariana_cat.png" alt="black-kitten" class="img-responsive img-circle img-profile">
 </template>
 
 <template name="info">
