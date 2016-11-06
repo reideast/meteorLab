@@ -1,4 +1,15 @@
 <template name="button">
-	<button>Click Me</button>
-	<p>You've pressed the button {{counter}} times.</p>
+    <div class="row">
+        <div class="col-xs-6 text-center">
+            <button class="increment btn btn-success">Increment <span class="badge">{{incCount}}</span></button>
+        </div>
+        <div class="col-xs-6 text-center">
+            <button class="decrement btn btn-warning">Decrement <span class="badge">{{decCount}}</span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <button class="incDec btn btn-primary">Increment/Decrement</button>
+        </div>
+    </div>
 </template>
