@@ -1,15 +1,17 @@
 <template name="button">
-    <div class="row">
-        <div class="col-xs-6 text-center">
-            <button class="increment btn btn-success">Increment <span class="badge">{{incCount}}</span></button>
+    <div id="containerButton">
+        <div class="row">
+            <div class="col-xs-6 text-center">
+                <button class="increment btn btn-success">Increment <span class="badge">{{incCount}}</span></button>
+            </div>
+            <div class="col-xs-6 text-center">
+                <button class="decrement btn btn-warning">Decrement <span class="badge">{{decCount}}</span></button>
+            </div>
         </div>
-        <div class="col-xs-6 text-center">
-            <button class="decrement btn btn-warning">Decrement <span class="badge">{{decCount}}</span></button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 text-center">
-            <button class="incDec btn btn-primary">Increment/Decrement</button>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <button class="incDec btn btn-primary">Increment/Decrement</button>
+            </div>
         </div>
     </div>
 </template>
