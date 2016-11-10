@@ -1,4 +1,14 @@
-/* CSS declarations go here */
+// Override Bootstrap Variables here
+// see http://getbootstrap.com/customize/ for list of variables
+$navbar-inverse-color: teal;
+$navbar-inverse-link-color: teal;
+$navbar-inverse-bg: #444;
+/*$navbar-inverse-link-active-bg: darken($navbar-inverse-bg, 10%);*/
+$navbar-inverse-link-active-bg: darken($navbar-inverse-color, 10%);
+
+// Import Boostrap SCSS
+@import '{reywood:bootstrap3-sass}/bootstrap'; // https://github.com/englue/meteor-bootstrap3-sass
+
 $profile-image-color: #008080;
 $profile-image-size: 100px;
 
