@@ -1,0 +1,6 @@
+http://stackoverflow.com/questions/32508208/collapse-on-bootstrap-navbar-is-not-working
+
+answer:
+http://stackoverflow.com/a/36108156/5271224
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
