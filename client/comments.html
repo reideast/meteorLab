@@ -1,31 +1,29 @@
 <template name="comments">
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th colspan="2">Comments</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each comments}}
-            <tr>
-                <td colspan="2">
-                    {{subject}}
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="updoot notVoted btn btn-default">
-                        <span class="glyphicon glyphicon-chevron-up"></span>
-                    </button>
-                    <button class="downdoot notVoted btn btn-default">
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                    </button>
-                </td>
-                <td>
-                    {{comment}}
-                </td>
-            </tr>
-            {{/each}}
-        </tbody>
-    </table>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Comments</h3>
+            </div>
+        </div>
+    </div>
+    {{#each comments}}
+        <div class="row">
+            <div class="col-xs-12">
+                {{subject}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <button class="updoot notVoted btn btn-default">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </button>
+                <button class="downdoot notVoted btn btn-default">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+            </div>
+            <div class="col-xs-10">
+                {{comment}}
+            </div>
+        </div>
+    {{/each}}
 </template>
